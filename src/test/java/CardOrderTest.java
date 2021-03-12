@@ -17,7 +17,6 @@ import static com.codeborne.selenide.Selenide.open;
 public class CardOrderTest {
 
     private Faker faker;
-
     @BeforeEach
     void setUpAll() {
         faker = new Faker(new Locale("ru"));
