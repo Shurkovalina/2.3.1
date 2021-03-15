@@ -24,8 +24,8 @@ public class CardOrderTest {
         $("[data-test-id=city] input").setValue(getCiti());
         $("[placeholder='Дата встречи']").sendKeys(Keys.CONTROL + "a", Keys.BACK_SPACE);
         $("[placeholder='Дата встречи']").setValue(generateDate(9));
-        $("[data-test-id=name] input").setValue(getName());
-        $("[data-test-id=phone] input").setValue(getPhone());
+        $("[data-test-id=name] input").setValue(generateName());
+        $("[data-test-id=phone] input").setValue(generatePhone());
         $("[data-test-id=agreement]").click();
         $(withText("Запланировать")).click();
         $(withText("Успешно!")).shouldBe(Condition.visible, Duration.ofMillis(15000));
