@@ -2,7 +2,6 @@ package data;
 
 import com.github.javafaker.Faker;
 
-import javax.xml.crypto.Data;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
